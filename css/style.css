@@ -1,0 +1,77 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+ul,
+ol,
+dl {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+body {
+  font-size: 1.6rem;
+  margin: 1rem;
+}
+
+/* Menu */
+.menu {
+  display: flex;
+}
+
+.menu-link {
+  display: block;
+  padding: 0.8rem 1rem;
+  border-bottom: 1px solid #333;
+}
+
+.menu-link--active {
+  border: 1px solid #333;
+  border-bottom: none;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+/* tab content */
+.tab-content-wrapper {
+  margin-top: 1rem;
+}
+
+.tab-content {
+  display: none;
+  padding: 0.8rem 1rem;
+  animation: fade-in 1000ms ease-out 0s 1 normal none;
+}
+
+.tab-content--active {
+  display: block;
+}
+
+.tab-content h3 {
+  margin-bottom: 0.5rem;
+  color: crimson;
+}
+
+.tab-content p {
+  line-height: 1.6;
+}
+
+/* animation */
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
